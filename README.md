@@ -28,16 +28,22 @@ git clone git@github.com:Devscale-Indonesia/devscale-nextjs-canary.git
 git clone git@github.com:Devscale-Indonesia/devscale-nextjs-canary.git .
 ```
 
-2. To install all dependencies of a project:
+2. Move to directory
+
+```bash
+cd <project-name>
+```
+
+3. To install all dependencies of a project:
 
 ```bash
 npm install
 ```
 
-3. Run the development server:
+4. Run the development server:
 
 ```bash
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
