@@ -1,17 +1,6 @@
-import localFont from "next/font/local";
+import { Inter } from "next/font/google";
+const inter = Inter({ subsets: ["latin"] });
 import "@/styles/globals.css";
-
-const geistSans = localFont({
-  src: "../../public/fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-
-const geistMono = localFont({
-  src: "../../public/fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
 export const metadata = {
   title: "Template Next.js (Canary Version) | Devscale ID",
@@ -24,9 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
-      </body>
+      <body className={`${inter.className}`}>{children}</body>
     </html>
   );
 }
